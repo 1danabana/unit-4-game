@@ -3,14 +3,14 @@ function characters(){
   var fighters = [];
   
   // fighters to choose from
-  fighters.push("assests/images/Jam_Xrd.png");
-  fighters.push("assests/images/Kliff_Underson.png");
-  fighters.push("assests/images/Sol_image_rev.png");
+  fighters.push("Jam_Xrd.png");
+  fighters.push("Kliff_Underson.png");
+  fighters.push("Sol_image_rev.png");
   console.log(fighters)
   // a loop that posts all the imgaes
   for(var i = 0; fighters.length > i; i++){
     var img = new Image(200, 200);
-      img.src = fighters[i];
+      img.src = "assets/images/" + fighters[i];
 
       var src = document.getElementById("choices");
       src.appendChild(img);
